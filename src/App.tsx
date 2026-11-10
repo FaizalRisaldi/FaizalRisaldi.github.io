@@ -24,6 +24,32 @@ import ProjectCard from "./components/ProjectCard";
 import { projects } from "./data/projects"; 
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
+import profileImage1 from "./images/profile-1.jpg";
+import profileImage2 from "./images/profile-2.jpg";
+import profileImage3 from "./images/profile-3.jpg";
+import profileImage4 from "./images/profile-4.jpg";
+
+import dbKlikImage from "./images/activities/db-klik.jpg";
+import itcImage from "./images/activities/itc.jpg";
+import litbangImage from "./images/activities/litbang.jpg";
+import diesNatalisImage from "./images/activities/dies-natalis.jpg";
+import futsalImage from "./images/activities/futsal.jpg";
+import gemastikImage from "./images/activities/gemastik.jpg";
+import gtsImage from "./images/activities/gts.jpg";
+import makrabImage from "./images/activities/makrab.jpg";
+import bemFtImage from "./images/activities/bem-ft.jpg";
+import wisudaImage from "./images/activities/wisuda.jpg";
+import researchImage from "./images/activities/research.jpg";
+
+import dataScienceCertificate from "./images/certificates/data-science.pdf";
+import pythonCertificate from "./images/certificates/python.pdf";
+import webinarCertificate from "./images/certificates/webinar.pdf";
+import internshipCertificate from "./images/certificates/magang.pdf";
+import dpwCertificate from "./images/certificates/dpw.pdf";
+import jsCertificate from "./images/certificates/js.pdf";
+import rCertificate from "./images/certificates/r.pdf";
+import financialCertificate from "./images/certificates/financial.pdf";
+
 type Theme = "light" | "dark";
 
 function getInitialTheme(): Theme {
@@ -1260,11 +1286,11 @@ function createStyles(bp: Breakpoints) {
 ------------------------------------------------------------------------- */
 
 const profileImages = [
-  "src//images/profile-1.jpg",
-  "src//images/profile-2.jpg",
-  "src//images/profile-3.jpg",
-  "src//images/profile-4.jpg",
-]
+  profileImage1,
+  profileImage2,
+  profileImage3,
+  profileImage4,
+];
 
 const skills = [
   {
@@ -1436,7 +1462,7 @@ const activities = [
     title: "DB Klik Internship",
     description:
       "Gained hands-on experience in fullstack web development and contributed to real-world technology projects.",
-    image: "/src/images/activities/db-klik.jpg",
+    image: dbKlikImage,
   },
   {
     number: "02",
@@ -1444,7 +1470,7 @@ const activities = [
     title: "ITC Organization",
     description:
       "Actively participated in the Information Technology Center student organization and its technology-related activities.",
-    image: "/src/images/activities/itc.jpg",
+    image: itcImage,
   },
   {
     number: "03",
@@ -1452,7 +1478,7 @@ const activities = [
     title: "ITC R&D Division",
     description:
       "Explored emerging technologies and contributed to research and development activities within the organization.",
-    image: "/src/images/activities/litbang.jpg",
+    image: litbangImage,
   },
   {
     number: "04",
@@ -1460,7 +1486,7 @@ const activities = [
     title: "ITC Dies Natalis",
     description:
       "Participated in the ITC anniversary celebration and its organizational activities.",
-    image: "/src/images/activities/dies-natalis.jpg",
+    image: diesNatalisImage,
   },
   {
     number: "05",
@@ -1468,7 +1494,7 @@ const activities = [
     title: "ITC Futsal",
     description:
       "Participated in futsal activities with ITC members to strengthen teamwork and camaraderie.",
-    image: "/src/images/activities/futsal.jpg",
+    image: futsalImage,
   },
   {
     number: "06",
@@ -1476,7 +1502,7 @@ const activities = [
     title: "GEMASTIK",
     description:
       "Contributed as a committee member in GEMASTIK, supporting the organization and execution of student activities in information and communication technology.",
-    image: "/src/images/activities/gemastik.jpg",
+    image: gemastikImage,
   },
   {
     number: "07",
@@ -1484,7 +1510,7 @@ const activities = [
     title: "ITC Goes to School",
     description:
       "Participated in ITC community activities aimed at introducing information technology to school students.",
-    image: "/src/images/activities/gts.jpg",
+    image: gtsImage,
   },
   {
     number: "08",
@@ -1492,7 +1518,7 @@ const activities = [
     title: "ITC Makrab",
     description:
       "Joined ITC's student gathering activities to build connections and strengthen relationships among members.",
-    image: "/src/images/activities/makrab.jpg",
+    image: makrabImage,
   },
   {
     number: "09",
@@ -1500,7 +1526,7 @@ const activities = [
     title: "BEM FT Inauguration 2022",
     description:
       "Participated in the inauguration event of the Faculty of Engineering Student Executive Board in 2022.",
-    image: "/src/images/activities/bem-ft.jpg",
+    image: bemFtImage,
   },
   {
     number: "10",
@@ -1508,7 +1534,7 @@ const activities = [
     title: "Graduation Escort",
     description:
       "Participated in student advocacy activities during the graduation ceremony escort.",
-    image: "/src/images/activities/wisuda.jpg",
+    image: wisudaImage,
   },
   {
     number: "11",
@@ -1516,7 +1542,7 @@ const activities = [
     title: "Lecturer Research Assistant",
     description:
       "Assisted in rice variety detection research using Artificial Neural Networks, including dataset preparation, model testing, and evaluation.",
-    image: "/src/images/activities/research.jpg",
+    image: researchImage,
   },
 ];
 
@@ -1527,7 +1553,7 @@ const certifications = [
     issuer: "DQLab",
     category: "DATA SCIENCE",
     year: "2024",
-    file: '/src/images/certificates/data-science.pdf',
+    file: dataScienceCertificate,
   },
   {
     number: "02",
@@ -1535,7 +1561,7 @@ const certifications = [
     issuer: "DQLab",
     category: "DATA SCIENCE",
     year: "2024",
-    file: '/src/images/certificates/python.pdf',
+    file: pythonCertificate,
   },
   {
     number: "03",
@@ -1543,7 +1569,7 @@ const certifications = [
     issuer: "Bangkalan Dev",
     category: "WEBINAR",
     year: "2025",
-    file: '/src/images/certificates/webinar.pdf',
+    file: webinarCertificate,
   },
   {
     number: "04",
@@ -1551,7 +1577,7 @@ const certifications = [
     issuer: "DB Klik",
     category: "INTERNSHIP",
     year: "2025",
-    file: '/src/images/certificates/magang.pdf',
+    file: internshipCertificate,
   },
   {
     number: "05",
@@ -1559,7 +1585,7 @@ const certifications = [
     issuer: "Dicoding",
     category: "WEB DEVELOPMENT",
     year: "2026",
-    file: '/src/images/certificates/dpw.pdf',
+    file: dpwCertificate,
   },
   {
     number: "06",
@@ -1567,21 +1593,21 @@ const certifications = [
     issuer: "Dicoding",
     category: "PROGRAMMING",
     year: "2026",
-    file: '/src/images/certificates/js.pdf',
+    file: jsCertificate,
   },
   {
     number: "08",
     category: "Data Science",
     title: "R Fundamental for Data Science",
     issuer: "DQLab",
-    file: '/src/images/certificates/r.pdf',
+    file: rCertificate,
   },
   {
     number: "09",
     category: "Financial Literacy",
     title: "Introduction to Financial Literacy",
     issuer: "Dicoding",
-    file: "/src/images/certificates/financial.pdf",
+    file: financialCertificate,
   },
 ];
 
